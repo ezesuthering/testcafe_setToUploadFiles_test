@@ -6,7 +6,7 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "testcafe-test": "testcafe chrome tests/ --app \"npm run serve -- --port 3000\" --app-init-delay 20000"
+    "testcafe-test": "testcafe chrome tests/ --app \"npm run serve -- --port 3000\" --app-init-delay 40000"
   },
   "dependencies": {
     "core-js": "^2.6.5",
