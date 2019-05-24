@@ -15,7 +15,8 @@ test('TC 00001 - With Action', async t => {
             .click(withActionRouterLink)
             .setFilesToUpload(inputFile, './resources/' + testImageName)
             .click(submitButton)
-            .expect(fileNameText.withText('Filename: ' + testImageName).exists).ok('File name is not correct');
+            .expect(fileNameText.withText('Filename: ' + testImageName).exists).ok('File name is not correct')
+            .wait(5000);
   });
 
   test('TC 00002 - Without Action', async t => {
@@ -27,5 +28,6 @@ test('TC 00001 - With Action', async t => {
     await t
             .click(withoutActionRouterLink)
             .setFilesToUpload(hiddenInputFile, './resources/' + testImageName)
-            .expect(fileNameText.withText('Filename: ' + testImageName).exists).ok('File name is not correct');
+            .expect(fileNameText.withText('Filename: ' + testImageName).exists).ok('File name is not correct')
+            .wait(5000)
   });
